@@ -6,15 +6,22 @@ Mais do que reproduzir soluções prontas, o objetivo de cada projeto aqui é qu
 
 ## Projetos
 
-### 🏠 [Predição de Preços de Casas](./Predição_de_Preços_de_Casas.ipynb)
+### 🛍️ [Segmentação e Clusterização de Clientes](./Clusterização.ipynb)
+Projeto de aprendizado não supervisionado focado em segmentação de clientes com base em perfis demográficos e comportamentais (renda anual e pontuação de gastos). Inclui:
+- Análise Exploratória de Dados (EDA) para identificar padrões de comportamento e distribuições das variáveis
+- Aplicação e validação do algoritmo **K-Means**, utilizando o Método do Cotovelo (*Elbow Method*) e o *Silhouette Score* para definir o número ideal de clusters
+- Comparação do agrupamento com a abordagem de **Clusterização Hierárquica Aglomerativa** (*Agglomerative Clustering*)
+- Profiling comportamental dos grupos para extração de *insights* estratégicos voltados a ações de marketing e retenção
+
+### 🏠 [Predição de Preços de Casas](./Regressão.ipynb)
 Projeto de regressão sobre o dataset Ames Housing, que replica e expande um notebook de referência do Kaggle. Inclui:
 - Investigação e correção de inconsistências em dados faltantes (garagem, porão)
-- Identificação e correção de vazamento de dado (data leakage) no escalonamento das features
+- Identificação e correção de vazamento de dado (*data leakage*) no escalonamento das features
 - Comparação controlada entre duas abordagens de engenharia de features (com e sem remoção de multicolinearidade e termos polinomiais), testando 8 algoritmos de regressão diferentes
 - Conclusão baseada em evidência sobre o peso relativo de tratamento de dados, engenharia de features e escolha de algoritmo no resultado final
 
-### 💳 [Detecção de Fraude em Cartão de Crédito](./Detecção_de_Fraude_de_cartão_de_crédito.ipynb)
+### 💳 [Detecção de Fraude em Cartão de Crédito](./Clasificação.ipynb)
 Projeto de classificação utilizando a metodologia SEMMA (Sample, Explore, Modify, Model, Assess), com um `RandomForestClassifier` para detectar transações fraudulentas. Compara abordagens com e sem undersampling para lidar com o desbalanceamento de classes, avaliando o impacto de cada uma na performance do modelo.
 
 ## Tecnologias utilizadas
-Python, pandas, scikit-learn, XGBoost, seaborn/matplotlib, Jupyter Notebook
+Python, pandas, numpy, scikit-learn, XGBoost, seaborn/matplotlib, Jupyter Notebook
